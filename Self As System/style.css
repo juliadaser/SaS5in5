@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.start-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  margin-top: 10vh;
+  margin-bottom: 50vh;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 50%;
+  height: auto;
+  transition: transform 0.3s ease;
+}

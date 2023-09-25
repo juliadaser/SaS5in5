@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Movement</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #image {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: top 2s;
+      }
+
+      #moveButton {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="image"
+      src="FloodedHouse.jpg"
+      width="200"
+      height="200"
+      alt="Moving Image"
+    />
+    <button id="moveButton">Move Image</button>
+
+    <script>
+      const image = document.getElementById("image");
+      const moveButton = document.getElementById("moveButton");
+
+      moveButton.addEventListener("click", () => {
+        // Calculate the height of the viewport
+        const windowHeight = window.innerHeight;
+
+        // Move the image to the bottom of the screen
+        image.style.top = windowHeight - image.clientHeight + "px";
+      });
+    </script>
+  </body>
+</html>

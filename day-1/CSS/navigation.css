@@ -1,0 +1,36 @@
+h3 {
+  margin: 1px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  height: 40px; /* to make the navigation always same height */
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+/* .navigation div {
+  border: 1px #ccc solid;
+  padding: 0px;
+} */
+
+.name {
+  flex: 1;
+  margin: 6px;
+}
+
+.portfolio {
+  flex: 1;
+  margin: 6px;
+}
+
+.play {
+  flex: 1;
+  margin: 6px;
+}
+
+.about {
+  flex: 1;
+  margin: 6px;
+}
